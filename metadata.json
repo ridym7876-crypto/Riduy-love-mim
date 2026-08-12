@@ -1,0 +1,6 @@
+{
+  "name": "Bangla Help Bot",
+  "description": "A real-time audio calling bot powered by Gemini Live API, capable of answering queries in Bengali and English.",
+  "requestFramePermissions": ["microphone", "display-capture"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

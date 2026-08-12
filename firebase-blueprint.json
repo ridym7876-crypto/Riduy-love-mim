@@ -1,0 +1,24 @@
+{
+  "collections": [
+    {
+      "name": "ai_settings",
+      "description": "Stores settings and instructions for the AI",
+      "documents": [
+        {
+          "id": "instruction",
+          "fields": [
+            {
+              "name": "text",
+              "type": "string",
+              "description": "The system instructions for the AI model."
+            }
+          ]
+        }
+      ],
+      "rules": {
+        "read": "true",
+        "write": "request.auth != null && request.auth.token.email == 'ridym7876@gmail.com'"
+      }
+    }
+  ]
+}

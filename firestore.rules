@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /ai_settings/{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.email == 'ridym7876@gmail.com';
+    }
+  }
+}
